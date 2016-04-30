@@ -11,49 +11,17 @@ if (Gem.win_platform?)
 end
 ###
 
+require 'rexml/document'
 require_relative 'lib/product.rb'
 require_relative 'lib/film.rb'
 require_relative 'lib/book.rb'
 require_relative 'lib/music_album.rb'
 
-products = [] # в этом массиве будут храниться продукты
+file_name = "data/products.xml"
 
-# создаю продукты и пихаю их в массив products
-
-film = Film.new(990, 5)
-
-film.update_product(:film_name => "Леон", :direct_name => "Люк Бессон", :year => 1994)
-
-products.push(film)
+products = Product.read_from_xml(file_name)
 
 
-film = Film.new(990, 2)
-
-film.update_product(:film_name => "Человек дождя", :direct_name => "Барри Левинсон", :year => 1998)
-
-products.push(film)
-
-
-film = Film.new(1490, 1)
-
-film.update_product(:film_name => "Тёмный рыцарь", :direct_name => "Кристофер Нолан", :year => 2008)
-
-products.push(film)
-
-
-book = Book.new(349, 10)
-
-book.update_product(:book_name => "Приключения Том Сойера", :author_name => "Марк Твен")
-
-products.push(book)
-
-
-music_album = MusicAlbum.new(550, 10)
-
-music_album.update_product(:album_name => "Judas Priest", :author_name => "Turbo",\
- :genre => "Heavy Metal")
-
-products.push(music_album)
 
 ###
 bablo = 0 # сюда приходит доход от магазина

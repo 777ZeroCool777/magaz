@@ -1,7 +1,7 @@
 class Film < Product
 
   # метод обновляет поля класса
-  def update_product(options)
+  def update(options)
     @film_name = options[:film_name]
     @direct_name = options[:direct_name]
     @year = options[:year]

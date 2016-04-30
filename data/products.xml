@@ -1,22 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <products>
   <product price="990" kol_vo="5">
-    <film film_name="Леон" direct_name="Люк Бессон" year="1994"/>
+    <film film_name="Леон" direct_name="Люк Бессон" year="1994">
+    </film>
   </product>
 
   <product price="990" kol_vo="2">
-    <film film_name="Человек дождя" direct_name="Барри Левинсон" year="1998"/>
+    <film film_name="Человек дождя" direct_name="Барри Левинсон" year="1998">
+    </film>
   </product>
 
   <product price="1490" kol_vo="1">
-    <film film_name="Тёмный рыцарь" direct_name="Кристофер Нолан" year="2008"/>
+    <film film_name="Тёмный рыцарь" direct_name="Кристофер Нолан" year="2008">
+    </film>
   </product>
 
   <product price="349" kol_vo="10">
-    <book book_name="Приключения Том Сойера" author_name="Марк Твен"/>
+    <book book_name="Приключения Том Сойера" author_name="Марк Твен">
+    </book>
   </product>
 
   <product price="550" kol_vo="10">
-    <musik_album album_name="Judas Priest" author_name="Turbo" genre="Heavy Metal"/>
+    <music_album album_name="Judas Priest" author_name="Turbo" genre="Heavy Metal">
+    </music_album>
   </product>
 </products>

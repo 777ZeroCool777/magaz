@@ -1,7 +1,7 @@
 class Book < Product
 
   # метод обновляет поля класса
-  def update_product(options)
+  def update(options)
     @book_name = options[:book_name]
     @author_name = options[:author_name]
   end
