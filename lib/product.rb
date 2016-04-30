@@ -5,7 +5,6 @@ class Product
   def initialize(price, kol_vo)
     @price = price
     @kol_vo = kol_vo
-    @bablo = nil
   end
 
   def update_product
